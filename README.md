@@ -23,12 +23,13 @@ Those RESTful services are built depending on Spring Web MVC framework, and shou
 
 ## Live Demo
 
-Demo Link: [https://dogviz.herokuapp.com]\
+Demo Link: [https://dogviz.herokuapp.com]
+
 The web application is tested on latest Chrome, FireFox, Safari, and an old iPad. 
 
 ## Screenshot
 
-![Screenshot](https://github.com/sa9us/cucs2016/blob/master/SCREENSHOT.PNG)
+![Screenshot](https://raw.githubusercontent.com/sa9us/cucc2016/master/SCREENSHOT.PNG)
 
 ## Deployment
 
