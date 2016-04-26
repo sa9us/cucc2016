@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="constants" class="ind.sagus.dogsensor.AppConfig">
+		<property name="constants">
+			<map>
+				<entry key="n_init_dogs" value="20" />
+			
+				<entry key="s_lat" value="51.042172" />
+				<entry key="r_lat" value=".0027" />
+				<entry key="o_lat" value="3.71e-4" />
+				
+				<entry key="s_lng" value="-114.134968" />
+				<entry key="r_lng" value=".01" />
+				<entry key="o_lng" value="5e-4" />
+				
+				<entry key="s_weight" value="30" />
+				<entry key="r_weight" value="20" />
+				<entry key="s_heartbeat" value="105" />
+				<entry key="r_heartbeat" value="30" />
+				<entry key="s_tempr" value="34" />
+				<entry key="r_tempr" value="2" />
+				
+				<entry key="o_inc_ratio" value=".5" />
+			</map>
+		</property>
+		
+		<property name="dogNames">
+			<list>
+				<value>Buddy</value>
+				<value>Harley</value>
+				<value>Zoe</value>
+				<value>Rocky</value>
+				<value>Sophie</value>
+				<value>Lola</value>
+				<value>Jack</value>
+				<value>Bailey</value>
+				<value>Bailey</value>
+				<value>Duke</value>
+				<value>Abby</value>
+				<value>Cooper</value>
+				<value>Ginger</value>
+				<value>Lucy</value>
+				<value>Maggie</value>
+				<value>Bella</value>
+				<value>Cody</value>
+				<value>Sadie</value>
+				<value>Gracie</value>
+				<value>Buster</value>
+				<value>Charlie</value>
+				<value>Max</value>
+				<value>Riley</value>
+				<value>Toby</value>
+				<value>Daisy</value>
+				<value>Chloe</value>
+				<value>Jake</value>
+				<value>Bear</value>
+				<value>Molly</value>
+				<value>Roxy</value>
+			</list>
+		</property>
+	</bean>
+
+</beans>
