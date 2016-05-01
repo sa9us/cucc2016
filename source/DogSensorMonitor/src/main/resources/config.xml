@@ -3,9 +3,25 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+	<bean id="simulator" class="java.util.concurrent.Executors" 
+		factory-method="newScheduledThreadPool" destroy-method="shutdownNow">
+		<constructor-arg value="1" />
+	</bean>
+	
+	<bean id="mqttBroker" class="ind.sagus.dogsensor.mqtt.MqttWebsocketBroker">
+		<constructor-arg value="8080" />
+	</bean>
+
 	<bean id="constants" class="ind.sagus.dogsensor.AppConfig">
+		<property name="mqttConfig">
+			<map>
+				<entry key="topic_name" value="dog_sensor" />
+			</map>
+		</property>
+		
 		<property name="constants">
 			<map>
+				<entry key="n_refresh_rate" value="2500" />
 				<entry key="n_init_dogs" value="20" />
 			
 				<entry key="s_lat" value="51.042172" />

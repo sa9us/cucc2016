@@ -11,8 +11,6 @@
         <link rel="stylesheet" type="text/css" href="css/customize.css"/>
     </head>
     <body>
-        <input type="hidden" id="server1" value="https://sa9us.herokuapp.com">
-        
         <div id="main" ng-class="{showPanel: selDogs.length > 0}">
             <div id="map"></div>
             <div id="info-panel">
@@ -122,6 +120,8 @@
             integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
             crossorigin="anonymous">
         </script>
+        <script src="js/mqttws31-min.js"></script>
+        <script src="js/config.js"></script>
         <script src="js/app.js"></script>
     </body>
 </html>
